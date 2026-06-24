@@ -1,0 +1,39 @@
+{
+  "sensors": {
+    "COMPARTMENT-1": {
+      "pressure": 100,
+      "sealed": true,
+      "temperature": 22
+    },
+    "REACTOR-SECTOR": {
+      "pressure": 100,
+      "sealed": true,
+      "temperature": 24
+    }
+  },
+  "equipment": {
+    "GATEWAY-1": {
+      "power": "normal",
+      "drive_status": "normal",
+      "lock_status": "locked"
+    },
+    "DOCKING-PORT-1": {
+      "node_status": "normal",
+      "power": "normal"
+    }
+  },
+  "communication": {
+    "earth_link": {
+      "status": "connected"
+    },
+    "ship_link": {
+      "status": "idle"
+    }
+  },
+  "ships": {
+    "SHIP-1": {
+      "docking_node_status": "normal",
+      "telemetry_valid": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "users": {
+    "OPERATOR-1": {
+      "role": "station_operator",
+      "allowed_compartments": [
+        "COMPARTMENT-1"
+      ],
+      "allowed_commands": [
+        "OPEN_GATEWAY",
+        "CLOSE_GATEWAY",
+        "START_DOCKING",
+        "EMERGENCY_MODE"
+      ]
+    },
+    "EARTH-CONTROL-1": {
+      "role": "earth_control",
+      "allowed_compartments": [
+        "COMPARTMENT-1"
+      ],
+      "allowed_commands": [
+        "OPEN_GATEWAY",
+        "CLOSE_GATEWAY",
+        "CANCEL_OPERATION",
+        "REQUEST_TELEMETRY"
+      ]
+    },
+    "SHIP-1": {
+      "role": "external_ship",
+      "allowed_compartments": [],
+      "allowed_commands": [
+        "REQUEST_DOCKING",
+        "SEND_TELEMETRY"
+      ]
+    }
+  },
+  "roles": {
+    "station_operator": {
+      "can_control_gateways": true,
+      "can_access_reactor_sector": false
+    },
+    "earth_control": {
+      "can_control_gateways": true,
+      "can_access_reactor_sector": false
+    },
+    "external_ship": {
+      "can_control_gateways": false,
+      "can_access_reactor_sector": false
+    }
+  }
+}
