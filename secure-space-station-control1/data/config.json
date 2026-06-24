@@ -1,0 +1,35 @@
+{
+  "station": {
+    "name": "Sevastopol",
+    "mode": "normal"
+  },
+  "gateways": {
+    "GATEWAY-1": {
+      "inner_door": "closed",
+      "outer_door": "closed",
+      "blocked": false,
+      "allow_simultaneous_doors_open": false
+    }
+  },
+  "compartments": {
+    "COMPARTMENT-1": {
+      "min_pressure": 95,
+      "max_pressure": 105,
+      "allow_gateway_open_when_unsealed": false
+    },
+    "REACTOR-SECTOR": {
+      "restricted": true
+    }
+  },
+  "docking": {
+    "DOCKING-PORT-1": {
+      "enabled": true,
+      "required_node_status": "normal"
+    }
+  },
+  "security": {
+    "require_signature": true,
+    "reject_replayed_commands": true,
+    "reject_conflicting_commands": true
+  }
+}
